@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Commercial
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="aboutsection2">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row" id="aboutsection22">
+                <div class="col-sm-8">
+                    <div class="aboutsection2part1">
+
+                        <h3 class="aboutsection2heading">
+                            Houston Concrete Contractor – Commercial Ready Mix Supply
+                        </h3>
+
+                        <p class="aboutp2">
+                            As a leading commercial Houston concrete contractor, TEXAN Concrete Ready Mix takes pride in
+                            delivering the highest quality and most effective solutions for large-scale projects
+                            throughout the metropolitan area. Our Houston ready mix concrete technicians can provide you
+                            with the custom formulations needed to provide support for building structures and to offer
+                            the highest durability for sidewalks, parking lots and other concrete installations. By
+                            working with us, you can be sure of the best possible results and the on-time delivery your
+                            business needs to succeed in the competitive marketplace.
+                        </p>
+                        <h3 class="aboutsection2heading2">
+                            Best Ready Mix Concrete Formulations
+                        </h3>
+                        <p class="aboutp2">
+                            At TEXAN Concrete Ready Mix, we use Alkon Spectrum 6 systems to ensure absolute precision
+                            when formulating your concrete. Our team selects ASTM-approved aggregates and SEMA-approved
+                            add mixes in exact proportions with water to create the best solutions for a wide range of
+                            concrete applications. This attention to detail and adherence to your specifications can
+                            provide you with greater confidence throughout the construction process.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="aboutimg1">
+                        <img src="./images/commercial1.jpg" alt="" id="aboutimg1">
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="aboutsection2heading3">
+                From 1 yard to 1,000 yards, no job is too big or too small
+            </h3>
+            <p class="aboutp3">
+                TEXAN Concrete Ready Mix is an established Houston concrete supply company with many years of experience
+                in the industry. We can provide you with the right solutions for an array of building projects and
+                commercial construction tasks:
+            </p>
+            <div class="aboutsection2list2">
+                <ul>
+                    <li>
+                        Sports facilities and arenas
+                    </li>
+                    <li>
+                        Churches and religious structures
+                    </li>
+                    <li>
+                        Educational institutions
+                    </li>
+                    <li>
+                        Restaurants and retail outlets
+                    </li>
+                    <li>
+                        Hospitals, clinics and medical facilities
+                    </li>
+                    <li>
+                        Apartment complexes
+                    </li>
+                    <li>
+                        Parking structures and lots
+                    </li>
+                </ul>
+            </div>
+            <p class="aboutp3">
+                By working with our team of concrete experts, we can ensure that you receive the right concrete
+                formulations for all aspects of your building project and that you achieve your objectives on schedule.
+            </p>
+
+
+            <h3 class="aboutsection2heading3">
+                New Construction Solutions
+            </h3>
+            <p class="aboutp3">
+                Our Houston cement mixing and concrete formulating professionals can help you manage all aspects of your
+                large-scale construction projects. We have the experience and the expertise needed to advise you on the
+                right formulations and products for all your Houston ready mix concrete needs. From start to finish,
+                TEXAN Concrete Ready Mix can deliver the right solutions for your construction company.
+            </p>
+            <p class="aboutp3">
+                If you need expert support for your commercial construction project, TEXAN Concrete Ready Mix can
+                provide the help you need to succeed. We have a proven track record of success in major infrastructure
+                and commercial construction projects and can deliver the best solutions for your building needs. Call us
+                today at 713-255-3333 to learn more about our lineup of products and services. Our team of talented
+                concrete technicians will be happy to work with you.
+            </p>
+
+
+        </div>
+
+
+        <div class="col-sm-3">
+            <div id="get a quote"></div>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+</script>

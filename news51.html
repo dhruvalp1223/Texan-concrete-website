@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        /* Add custom styles here */
+
+        .col-sm-4 {
+            flex: 0 0 33.33%;
+            /* 33.33% width */
+            max-width: 33.33%;
+        }
+
+        .col-sm-8 {
+            flex: 0 0 66.66%;
+            /* 66.66% width */
+            max-width: 66.66%;
+        }
+
+        #content {
+            padding: 50px;
+        }
+
+        #boxclr {
+            background-color: #b6bee4;
+        }
+    </style>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Texas Concrete Ready Mix News
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body style="background-color:aliceblue;">
+
+    <a href="news52.html">← Short Load vs. Houston Ready-Mix Concrete Supply</a><br>
+    <a href="news50.html">Why Use Concrete Instead of Asphalt for your Parking Lot →</a>
+
+    <div class="row">
+        <div id="content" class="col-sm-9">
+            <ul>
+                <li class="row" style="display: flex;" id="boxclr">
+                    <div>
+                        <h2 class="newsheading" style="color: rgb(8, 8, 213);">Add Safety with Non-Slip Pool Surrounds
+                        </h2>
+                        <p class="newsp">Posted on November 20, 2019 by Phoebee Johnson</p>
+                        <div class="continueimage"
+                            style="text-align: center; background-color: bisque;  margin: auto; padding-top: 10px;">
+                            <img src="./images/pool.jpeg" class="" style="border-radius: 5px;">
+                            
+                        </div>
+                        <div>
+                            <p class="newsp">Swimming pools are a great retreat from the Houston summer heat. However, there are risks to having a pool, like slips and falls, so it’s important to create the best possible safety for you, your family, and your guests. For example, your Houston concrete supply company is your best source of information on non-slip surfaces to surround your pool with. There are many options for textured and patterned concrete pool surrounds to help prevent slips and falls. A few basic precautions can help create the safest environment for those who use your pool.</p>
+
+                            <h2 class="newsheading">Secure Your Pool Area With a Locking Fence</h2>
+                            <p class="newsp">A fence can be the first line of protection for your private pool. Securely locking the fence when you aren’t home or using your pool can add protection against unsupervised swimmers. Houston regulations require all pool fences be at least 4 feet tall. In addition, they must not have any gaps 4 inches or more.  If you are installing a new fence, it must be composed of a material other than chain link. Also, the entry point for your swimming pool fence must be self-latching and self-closing. Implementing these safety features will help protect against intrusions and accidents that can result from unauthorized entry to your pool area</p>
+
+                            <h2 class="newsheading">Install a Motion Sensor and Alarm</h2>
+
+                            <p class="newsp">Motion sensors are designed to let you know when someone enters your back yard or your pool area. These devices will provide an added line of defense against unwanted intrusions into your pool area. This will allow you to prevent accidental drownings that could occur if unattended children make their way into your pool.</p>
+
+                            <h2 class="newsheading">Opt for a Non-Slip Surround</h2>
+                            <p class="newsp">Your Houston ready mix contractor has the knowledge and experience needed to make the right recommendations for your swimming pool area. In many cases, your Houston concrete supply company offers formulations specifically designed to provide a safer surface for these areas. Working with an established Houston concrete supplier is the best way to achieve the most attractive and safe poolside solutions. Aggregate finishes, overlays or sealers are all popular ways to upgrade your concrete pool surround and provide you with a safer environment.</p>
+                            <p class="newsp">The Houston concrete supply experts at Texas Concrete Enterprise Ready Mix Inc. will provide the most sensible solutions for your swimming pool area and all your concrete mixing and pouring needs. We work with companies and homeowners throughout the Houston area for all their concrete formulation and application requirements. Call us today at 713-227-1122 to request a quote for your project. We look forward to the chance to serve you.</p>
+
+                            <a href="https://www.facebook.com/TexasConcreteRM" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="btn btn-primary">
+                                <i class="fab fa-twitter-square y"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="newsp">This entry was posted in Concrete, Concrete Contractor, Ready Mix Concrete. Bookmark the permalink.
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3" style="padding-top: 50px;" id="categories">
+            <div id="categories"></div>
+        </div>
+    </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("categories.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("categories").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+</script>

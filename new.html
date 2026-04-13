@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="script.js"></script>
+    <title></title>
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <section class="section1">
+        <div class="section1main">
+            <div class="section1part1">
+                <div class="section1part1heading">
+                    <h1 class="section1part1heading1">
+                        HOUSTON CONCRETE READY MIX SUPPLY
+                    </h1>
+                </div>
+                <div class="praragraph1">
+                    <p class="p1">
+                        TEXAN Concrete Ready Mix maintains a staff of certified concrete technicians who can create a
+                        customized
+                        mix designed to suityour needs perfectly. Our facility maintains a state of the art fleet of
+                        equipment
+                        with over 25 mixers
+                        utilizing GPS technology to meet the ever increasing demands of the construction industry.
+                        Whether
+                        you
+                        need a patio,
+                        parking lot, or foundation, we are your one-stop source for the best solutions in the Houston
+                        concrete
+                        supply industry.
+                    </p>
+                </div>
+                <div class="roundimage">
+                    <a href="commercial.html"><img src="./images/commercial-modified.png" alt="" class="img1"></a>
+
+                    <a href="Residential.html"><img src="./images/residential.png" alt="" class="img1"></a>
+
+                    <a href="concrete calculator.html "><img src="./images/calculator-modified-modified.png" alt="" class="img1"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="section22">
+            <div class="section2part1">
+                <h3 class="section2heading">
+                    The Best Commercial and Residential Solutions from Texas Concrete
+                </h3>
+
+                <p class="p2">The professionals at TEXAN Concrete Ready Mix can provide you with the right solutions for
+                    all your
+                    Houston concrete and cement mixing needs.We maintain the highest standards of quality
+                    control,allowing you to
+                    purchase from us with confidence.
+                </p>
+                <p class="p2">TEXAN Concrete Ready Mix serves residential and commercial customers and can provide the
+                    right
+                    solutions for small jobs or major projects. We carefully design proper concrete mixes and utilize
+                    advances
+                    in mixing technology, to help our customers reduce the amount of reinforcing steel, time, and labor
+                    required.
+                    By entrusting your concrete and cement needs to us, you can enjoy the highest quality materials and
+                    the best
+                    services in the Houston metropolitan area.
+                </p>
+            </div>
+            <div id="section2part2">
+                <img src="./images/image8.jpg" alt="" id="img8">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="columns">
+        <div class="column">
+            <div class="mainheading1">
+                <h2 class="mainheading">Residential Concrete Applications</h2>
+            </div>
+            <div class="heading3">
+                <h5 class="heading1">Driveway Repair and Replacement</h5>
+                <h5 class="heading2">Foundations and Basements</h5>
+                <h5 class="heading1">Sidewalks</h5>
+                <h5 class="heading2">Porches and Patios</h5>
+                <h5 class="heading1">Pool Decks and Surrounds</h5>
+                <h5 class="heading2">Garage Floors</h5>
+                <h5 class="heading1">Steps and Concrete Ramps</h5>
+            </div>
+
+            <div>
+                <img src="./images/rc.jpg" alt="" class="img10">
+            </div>
+        </div>
+        <div class="column">
+            <div class="mainheading1">
+                <h2 class="mainheading">Commercial Concrete Applications</h2>
+            </div>
+            <div class="heading3">
+                <h5 class="heading1">Driveway Repair and Replacement</h5>
+                <h5 class="heading2">Foundations and Basements</h5>
+                <h5 class="heading1">Sidewalks</h5>
+                <h5 class="heading2">Porches and Patios</h5>
+                <h5 class="heading1">Pool Decks and Surrounds</h5>
+                <h5 class="heading2">Garage Floors</h5>
+                <h5 class="heading1">Steps and Concrete Ramps</h5>
+            </div>
+
+            <div>
+                <img src="./images/home.jpg" alt="" class="img10">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section4">
+        <div class="section4part">
+            <div class="section4heading">
+                <h2 class="section4heading1">
+                    We’re Ready To Help You<br>
+                    Create The Right Concrete Mix
+                </h2>
+            </div>
+            <div class="section4lable">
+                <label for="" class="mono">713-255-3333</label>
+                <br>
+                <a href="contact us.html"><button type="button" id="btn1" class="btn btn-info"> GET A QUOTE</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                })
+                .catch(error => {
+                    console.error("Error fetching header:", error);
+                });
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => {
+                    console.error("Error fetching footer:", error);
+                });
+        });
+
+        
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta charset="utf-8">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+  <title></title>
+
+</head>
+
+
+<style>
+  footer {
+    background-color: #000000ff;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+  }
+
+  #c2 {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col {
+    min-width: 280px;
+    color: #f2f2f2f2;
+    font-family: poppins;
+    padding: 0 2rem;
+  }
+
+  .col .logo {
+    width: 220px;
+    margin-bottom: 25px;
+  }
+
+  .col h3 {
+    color: #ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .col h3::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+
+  }
+
+  .col h3:hover::after {
+    width: 30px
+  }
+
+  .col .social a i {
+    color: #ff014fff;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+  }
+
+  .col .social a i:hover {
+    transform: scale(1.5);
+    filter: grayscale(25);
+  }
+
+  .col .links a {
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+  }
+
+  .col .links a::before {
+
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #ff014fff;
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+
+  .col .links a:hover::before {
+    opacity: 1;
+  }
+
+  .col .links a:hover {
+    transform: translateX(-8px);
+    color: #ff014fff;
+  }
+
+  .col .contact-details {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .col .contact-details i {
+    margin-right: 15px;
+  }
+
+
+  /********** Responsive Design ********/
+  @media(max-width:900px) {
+    .row1 {
+      flex-direction: column;
+    }
+
+    .col {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media(max-width:768px) {
+    .row1 {
+      flex-direction: column;
+    }
+
+    .col {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+
+<footer>
+  <div class="container" id="c2">
+    <div class="row" id="row1">
+
+      <div class="col" id="company">
+        <img src="images/th-removebg-preview.png" alt="" class="logo">
+      </div>
+
+      <div class="col" id="services">
+        <h3>LOCATIONS</h3>
+        <div class="links">
+          <p>6001 Homestead Rd
+            Houston, <br> TX 77028.</p>
+          <p> 21990 FM 1314 Porter, TX 77365.</p>
+          <p>Phone: 713-255-3333</p>
+          <p>Fax: 713-255-2800</p>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+
+      <div class="col" id="useful-links">
+        <h3>Links</h3>
+        <div class="links">
+          <a href="what is ready mix concrete.html">What is Ready Mix Concrete?</a>
+          <a href="Concrete Contractor.html">Concrete Contractor</a>
+          <a href="Residential.html">Residential Ready Mix Concrete</a>
+          <a href="commercial.html">Commercial Concrete Supply</a>
+          <a href="concrete calculator.html">Concrete Calculator</a>
+        </div>
+      </div>
+
+      <div class="col" id="contact">
+        <h3>OUR MISSION</h3>
+        <div class="contact-details">
+          <i class="fa fa-location"></i>
+          <p> Our Professional and knowledgeable staff is dedicated to providing customers with
+            exceptional service, by providing competitive pricing, reliability, and the changing
+            needs of the concrete industry. Our Goal is to deliver the best quality concrete ON TIME!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

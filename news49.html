@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        /* Add custom styles here */
+
+        .col-sm-4 {
+            flex: 0 0 33.33%;
+            /* 33.33% width */
+            max-width: 33.33%;
+        }
+
+        .col-sm-8 {
+            flex: 0 0 66.66%;
+            /* 66.66% width */
+            max-width: 66.66%;
+        }
+
+        #content {
+            padding: 50px;
+        }
+
+        #boxclr {
+            background-color: #b6bee4;
+        }
+    </style>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Texas Concrete Ready Mix News
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body style="background-color:aliceblue;">
+
+    <a href="news50.html"> Why Use Concrete Instead of Asphalt for your Parking Lot</a><br>
+    <a href="news48.html">4 Concrete Additives and Their Uses →</a>
+
+    <div class="row">
+        <div id="content" class="col-sm-9">
+            <ul>
+                <li class="row" style="display: flex;" id="boxclr">
+                    <div>
+                        <h2 class="newsheading" style="color: rgb(8, 8, 213);">
+                            The Benefits of Using Concrete for Your Construction Project
+                        </h2>
+                        <p class="newsp">Posted on January 20, 2020 by Phoebee Johnson</p>
+                        <div class="continueimage"
+                            style="text-align: center; background-color: bisque;  margin: auto; padding-top: 10px;">
+                            <img src="./images/Construction Project.jpeg" class="" style="border-radius: 5px;">
+                            
+                        </div>
+                        <div>
+                            <p class="newsp">Humans have been using concrete to build structures for thousands of years. Additionally, your Houston concrete supply can mix concrete to specific formulas that are perfect for your project. Concrete is often used for outdoor patio areas, pool surrounds, driveways, and garage doors. If you have upcoming projects like these, you may consider the many benefits of using Houston ready mix concrete. Concrete is durable, fire resistant, and versatile, which is why it is a great solution for your construction and renovation needs.
+                            </p>
+
+                            <h2 class="newsheading">Durability</h2>
+                            <p class="newsp">One of the benefits of concrete  is that it is durable and long-lasting. Its resiliency and strength make it perfect for areas that need a lot of support or will get a lot of traffic. For example, driveways and patio areas. While there are other materials you can use for these projects, they often don’t provide the same lifespan and cost-effectiveness as concrete. Your Houston concrete supply can offer quick and budget-friendly solutions for your patio or driveway renovation so you can rest easy.</p>
+
+                            <h2 class="newsheading">Fire Resistance</h2>
+                            <p class="newsp">Another great perk that concrete offers is that it is fire resistant. For this reason, it is perfect to use in ares where you will be grilling or using a fire pit. Other materials can easily ignite and cause a house fire in these areas. However, with concrete grilling and fire pit surfaces, you can enjoy greater fire safety as well as durability. Anywhere you use equipment that involves flames, concrete can be the best solution to use.</p>
+
+                            <h2 class="newsheading">Your Houston Concrete Supply Company Can Form Concrete into Many Shapes, Textures, and Colors</h2>
+
+                            <p class="newsp">Additionally, your Houston concrete supplier can mix concrete in to many different shapes, textures, and colors. This means that your mix can be customized to suit your needs and taste. For example, you can design a pool surround that matches the color of your home’s exterior, or create a piece of art for your outdoor space. Since your Houston supply company can formulate a customized mix, it’s completely up to you how you want to design your concrete projects.</p>
+                            
+                            <p class="newsp">At Texas Concrete Enterprise Ready Mix Inc., we specialize in providing you the concrete solutions you need for your residential and commercial projects. As a leading Houston concrete supplier, we have the expertise to provide the best, most practical formulation for your needs. Call our team of experts today at (713) 227-1122 for more information or to request a quote. We look forward to the opportunity to serve you.</p>
+                            
+                            <a href="https://www.facebook.com/TexasConcreteRM" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="btn btn-primary">
+                                <i class="fab fa-twitter-square y"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="newsp">This entry was posted in Uncategorized. Bookmark the permalink.
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3" style="padding-top: 50px;" id="categories">
+            <div id="categories"></div>
+        </div>
+    </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("categories.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("categories").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+</script>

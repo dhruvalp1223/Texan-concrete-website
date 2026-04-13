@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        /* Add custom styles here */
+
+        .col-sm-4 {
+            flex: 0 0 33.33%;
+            /* 33.33% width */
+            max-width: 33.33%;
+        }
+
+        .col-sm-8 {
+            flex: 0 0 66.66%;
+            /* 66.66% width */
+            max-width: 66.66%;
+        }
+
+        #content {
+            padding: 50px;
+        }
+
+        #boxclr {
+            background-color: #b6bee4;
+        }
+    </style>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Texas Concrete Ready Mix News
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body style="background-color:aliceblue;">
+
+    <a href="news56.html">← Houston Ready Mix Concrete: FAQs, Benefits, and Applications</a><br>
+    <a href="news54.html">Why You Should Use Concrete For Your Commercial Building Project →</a>
+
+    <div class="row">
+        <div id="content" class="col-sm-9">
+            <ul>
+                <li class="row" style="display: flex;" id="boxclr">
+                    <div>
+                        <h2 class="newsheading" style="color: rgb(8, 8, 213);">Why Concrete Is Better Than Other Materials</h2>
+                        <p class="newsp">Posted on June 26, 2019 by Bizadmin</p>
+                        <div class="continueimage"
+                            style="text-align: center; background-color: bisque;  margin: auto; padding-top: 10px;">
+                            <img src="./images/Storage.jpeg" class="" style="border-radius: 5px;">
+
+                        </div>
+                        <div>
+                            <p class="newsp">Concrete offers serious benefits for construction projects in our area. A Houston concrete supplier can help you achieve the best results for your construction activities. There are many important advantages of choosing concrete over other materials for your next project in the Houston area.</p>
+
+                            <h2 class="newsheading">Durability</h2>
+                            <p class="newsp">Houston ready mix concrete offers exceptional durability for your building projects, including buildings, bridges and many other structures. By incorporating concrete into your overall building plan, you will enjoy the strongest, durable results for your project.</p>
+
+                            <h2 class="newsheading">Fire Resistance</h2>
+
+                            <p class="newsp">Concrete is naturally fire resistant, which is especially important for commercial buildings that house people or valuable inventory. The protection afforded by this building material will pay off by limiting the spread of fire and reducing damage caused by these events.</p>
+
+                            <h2 class="newsheading">Good for the Environment</h2>
+                            <p class="newsp">Sustainable and green-friendly, concrete can be created using recycled materials. The production process produces minimal carbon dioxide, which can be reduced further by modern manufacturing techniques. At the end of its useful life, concrete may once again be recycled to reduce the impact on the environment. Additionally, concrete offers natural insulation for buildings that will likely reduce the cost of heating and cooling. This can add up to a greener and more energy efficient solution for your building needs.</p>
+
+                            <h2 class="newsheading">Low Maintenance</h2>
+
+                            <p class="newsp">Your Houston concrete supply company can provide you with information on the benefits of concrete, including the low maintenance requirements for these materials. In general, regular washing is all that is required to keep concrete looking great and functioning properly. If cracks develop on driveways or sidewalks, your concrete company can resolve these issues quickly and with minimal disruption of your operations.</p>
+
+                            <h2 class="newsheading">Versatility</h2>
+                            <p class="newsp">Your Houston concrete supplier can provide the right formulations for a wide range of projects that include patios, sidewalks, driveways, commercial buildings and bridges. The versatility of concrete makes it a preferred choice for many different types of uses. An established Houston concrete supply company can determine the right type of concrete for your needs.</p>
+
+                            <p class="newsp">Texas Concrete Enterprise Ready Mix is a leading Houston concrete supplier with a proven track record for reliability and on-time delivery for construction projects throughout our area. We work with you to ensure that you receive the right formulation and the correct solutions. Call us today at 713-227-1122 to get a quote or to discuss your project with us. We look forward to the opportunity to serve you.</p>
+                            
+                            <a href="https://www.facebook.com/TexasConcreteRM" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="btn btn-primary">
+                                <i class="fab fa-twitter-square y"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="newsp">This entry was posted in Concrete and tagged Houston Concrete Supplier, Houston Concrete Supply, Houston Ready Mix Concrete. Bookmark the permalink.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3" style="padding-top: 50px;" id="categories">
+            <div id="categories"></div>
+        </div>
+    </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("categories.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("categories").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+</script>

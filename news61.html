@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        /* Add custom styles here */
+
+        .col-sm-4 {
+            flex: 0 0 33.33%;
+            /* 33.33% width */
+            max-width: 33.33%;
+        }
+
+        .col-sm-8 {
+            flex: 0 0 66.66%;
+            /* 66.66% width */
+            max-width: 66.66%;
+        }
+
+        #content {
+            padding: 50px;
+        }
+
+        #boxclr {
+            background-color: #b6bee4;
+        }
+
+    </style>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Texas Concrete Ready Mix News
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body style="background-color:aliceblue;">
+
+    <a href="news62.html">← Questions to Ask When Hiring a Houston Concrete Contractor</a><br>
+    <a href="news60.html">Step on a Crack, Break Your Mother’s Back: Causes of Cracks in Concrete →</a>
+
+    <div class="row">
+        <div id="content" class="col-sm-9">
+            <ul>
+                <li class="row" style="display: flex;" id="boxclr">
+                    <div>
+                        <h2 class="newsheading" style="color: rgb(8, 8, 213);">Could Concrete Help to Reduce Air Pollution?</h2>
+                        <p class="newsp">Posted on December 26, 2018 by Bizadmin</p>
+                        <div class="continueimage"
+                            style="text-align: center; background-color: bisque;  margin: auto; padding-top: 10px;">
+                            <img src="./images/Pollution.jpg" class="" style="border-radius: 5px;">
+
+                        </div>
+                        <div>
+                            <p class="newsp">Concrete offers many advantages for construction companies in our area. In the near future, new formulations of concrete may even be able to absorb pollutants from the outside air. Concrete already provides a green-friendly option for many building projects that can be formulated to increase durability, allow light to pass through, and bend slightly to resist high winds. By working with a qualified Houston concrete contractor, you can take advantage of these new technologies when they become available in our area.</p>
+
+                            <h2 class="newsheading">Solving a Widespread Problem</h2>
+                            <p class="newsp">Sulphur dioxide and nitrogen oxides are among the most common pollutants found in urban areas. Nitrogen oxides are implicated in the formation of acid rain and smog, making them especially dangerous for the health of all living things. Sulphur dioxide is produced during the burning of fossil fuels used for transportation and manufacturing. It generates soot particles that can increase the risk of bronchitis and other respiratory problems in vulnerable individuals. Reducing the concentrations of these pollutants in outdoor air can be beneficial.</p>
+
+                            <h2 class="newsheading">How Concrete Can Help</h2>
+
+                            <p class="newsp">One of the primary components of any concrete formulation is cement, which typically contains large amounts of calcium. A 2014 study conducted by researchers at Stony Brook University in New York found that powdered cement and concrete was capable of absorbing nitrogen oxides. Similar results were achieved when concrete powder was exposed to higher concentrations of sulphur dioxide. These results suggest that concrete could serve as a valuable tool in the fight against pollution in the near future.</p>
+
+                            <h2 class="newsheading">The Right Formulation Is Key to Success</h2>
+                            <p class="newsp">Along with its ability to soak up sulphur dioxide and various nitrogen oxides, concrete offers a number of other benefits for the environment and for construction companies. Concrete is recyclable and durable and is recommended by Houston concrete contractor professionals for green-friendly buildings that can stand up to inclement weather. Your Houston ready mix concrete company can provide you with options designed to suit the needs of your building project and that incorporate the latest advances in this material.</p>
+
+                            <p class="newsp">Texas Concrete Enterprise Ready Mix Inc. is a full-service Houston concrete supply and service company. We work with commercial and residential customers to complete projects of all sizes, from a small backyard patio to a large parking structure or public building project. If you need the help of an experienced and established concrete formulation and pouring company for your upcoming project, give your Houston concrete contractor a call today at 713-227-1122. We look forward to the opportunity to serve you now and in the future.</p>
+
+                            <a href="https://www.facebook.com/TexasConcreteRM" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="btn btn-primary">
+                                <i class="fab fa-twitter-square y"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="newsp">This entry was posted in Concrete and tagged Houston Concrete Contractor, Houston Concrete Supply, Houston Ready Mix Concrete. Bookmark the permalink.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3" style="padding-top: 50px;" id="categories">
+            <div id="categories"></div>
+        </div>
+    </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("categories.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("categories").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+</script>
