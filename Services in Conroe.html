@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Ready Mix Concrete Services in Conroe
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="aboutsection2">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row" id="aboutsection22">
+                <div class="col-sm-8">
+                    <div class="aboutsection2part1">
+
+                        <h3 class="aboutsection2heading">
+                            Ready Mix Concrete Services in Conroe
+                        </h3>
+
+                        <p class="aboutp2">
+                            At TEXAN Concrete Ready Mix, we are ready to help you with any residential and commercial
+                            concrete projects throughout the Conroe area.
+                        </p>
+                        <h3 class="aboutsection2heading2">
+                            <i class="fas fa-building"></i> Commercial Concrete Solutions
+                        </h3>
+                        
+                        <div class="aboutsection2list">
+                            <p>Our cement mixing and concrete formulating professionals can help you manage all aspects
+                                of the commercial concrete requirements for construction projects in Conroe.
+                            </p>
+                            <p>Examples of commercial concrete projects we support include:</p>
+                            <ul>
+                                <li>
+                                    Restaurants and retail outlets.
+                                </li>
+                                <li>
+                                    Apartment complexes
+                                </li>
+                                <li>
+                                    Hospitals, clinics and medical facilities
+                                </li>
+                                <li>Sports facilities and arenas</li>
+                                <li>Churches and religious structures</li>
+                                <li>Parking structures and lots</li>
+                                <li>Educational institutions</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="aboutimg1">
+                        <img src="./images/support.jpg" alt="" id="aboutimg1">
+                    </div>
+                </div>
+            </div>
+            <p class="aboutp3">
+                Moreover, our team can provide the proven solutions needed to manage large-scale infrastructure
+                implementations and home improvement projects quickly and conveniently. Additionally, you can enjoy the
+                on-time service and the most appropriate formulations for your specific needs.
+            </p>
+
+            <h3 class="aboutsection2heading3">
+                Ready Mix Concrete Houston Contractor
+            </h3>
+
+            <p class="aboutp3">
+                Our professionals can provide you with the proven solutions you need to ensure the best results for
+                projects large and small. Above all, we are an experienced Houston concrete contractor that will work
+                with you to determine the right formulation and the best approach to your specific application.
+                Therefore, if you need residential, commercial or infrastructure concrete services, TEXAN Concrete Ready
+                Mix can provide you with the solutions you need to ensure the best results. Contact us today at
+                713-255-3333 to discuss your needs with us. We look forward to working with you.
+            </p>
+
+        </div>
+
+        <div class="col-sm-3">
+            <div id="get a quote"></div>
+        </div>
+    </div>
+</section>
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+</script>

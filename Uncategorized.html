@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        /* Add custom styles here */
+
+        .col-sm-4 {
+            flex: 0 0 33.33%;
+            /* 33.33% width */
+            max-width: 33.33%;
+        }
+
+        .col-sm-8 {
+            flex: 0 0 66.66%;
+            /* 66.66% width */
+            max-width: 66.66%;
+        }
+
+        #content {
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Uncategorized
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body style="background-color: aliceblue;">
+    <!-- <ul class="pagination" id="pagination" style="margin: 20px;"></ul> -->
+
+    <div class="row">
+        <div id="content" class="col-sm-9">
+            <!-- Each news item should be wrapped in an <li> -->
+            <ul>
+                <li class="row" style="display: flex;" id="boxclr">
+                    <div>
+                        <!-- Content from col-sm-8 -->
+                        <div style="text-align: center;">
+                            <img src="./images/Construction Project.jpeg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="newsheading">
+                                The Benefits of Using Concrete for Your Construction Project
+                            </h3>
+                            <p class="newsp">
+                                Posted on January 20, 2020 by Phoebee Johnson
+                            </p>
+                            <p class="newsp">
+                                Humans have been using concrete to build structures for thousands of years.
+                                Additionally, your Houston concrete supply can mix concrete to specific formulas that
+                                are perfect for your project. Concrete is often used for outdoor patio areas, pool
+                                surrounds, driveways, …
+                                <a href="news49.html"> Continue
+                                    reading →</a>
+                            </p>
+                            <a href="https://www.facebook.com/TexasConcreteRM" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="btn btn-primary">
+                                <i class="fab fa-twitter-square y"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="newsp">
+                        Posted in Uncategorized | Comments Off on The Benefits of Using Concrete for Your Construction
+                        Project</p>
+                </li>
+                <li class="row" style="display: flex;" id="boxclr">
+                    <div>
+                        <!-- Content from col-sm-8 -->
+                        <div>
+                            <h3 class="newsheading">
+                                The Different Formulations of Concrete and Their Uses
+                            </h3>
+                            <p class="newsp">
+                                Posted on July 20, 2017 by Bizadmin
+                            </p>
+                            <p class="newsp">
+                                Choosing the right type of concrete for your commercial or residential project can
+                                ensure the greatest durability and longevity for these applications. Working with a
+                                trusted Houston concrete supply company can allow you to enjoy the most accurate
+                                guidance and …
+                                <a href="news78.html"> Continue
+                                    reading →</a>
+                            </p>
+                            <a href="https://www.facebook.com/TexasConcreteRM" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="btn btn-primary">
+                                <i class="fab fa-twitter-square y"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="newsp">
+                        Supply | Comments Off on The Different Formulations of Concrete and Their Uses
+                    </p>
+                </li>   
+            </ul>
+        </div>
+        <div class="col-sm-3" style="padding-top: 50px;" id="categories">
+            <div id="categories"></div>
+        </div>
+    </div>
+
+    <ul class="pagination" id="pagination" style="margin: 20px;"></ul>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("categories.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("categories").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+
+    const itemsPerPage = 10;
+    const content = document.getElementById('content');
+    const pagination = document.getElementById('pagination');
+    const items = content.querySelectorAll('.row'); // Selecting the rows correctly
+    const totalItems = items.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    let currentPage = 1;
+
+    function showPage(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        items.forEach((item, index) => {
+            if (index >= startIndex && index < endIndex) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    function updatePagination() {
+        pagination.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+            const pageItem = document.createElement('li');
+            pageItem.classList.add('page-item');
+            const pageLink = document.createElement('a');
+            pageLink.classList.add('page-link');
+            pageLink.textContent = i;
+            pageLink.href = '#';
+            if (i === currentPage) {
+                pageLink.classList.add('active');
+            }
+            pageLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                currentPage = i;
+                showPage(currentPage);
+                updatePagination();
+            });
+            pageItem.appendChild(pageLink);
+            pagination.appendChild(pageItem);
+        }
+    }
+
+    showPage(currentPage);
+    updatePagination();
+</script>

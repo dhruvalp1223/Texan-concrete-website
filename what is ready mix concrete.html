@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    What is Ready Mix Concrete?
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="aboutsection2">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row" id="aboutsection22">
+                <div class="col-sm-8">
+                    <div class="aboutsection2part1">
+
+                        <h3 class="aboutsection2heading">
+                            <i class="fas fa-question-circle"></i> What is Ready Mix Concrete?
+                        </h3>
+                        
+
+                        <p class="aboutp2">
+                            he experts at TEXAN Concrete Ready Mix can provide you with the solutions you need to manage
+                            all your concrete supply needs. Our formulations can be used for a wide array of
+                            applications. This includes residential foundations, patios, driveways and commercial
+                            installations for parking structures, bridges and many other construction projects.
+                            Therefore, by entrusting your project to us, you can enjoy the best Houston ready mix
+                            concrete services in our area.
+                        </p>
+                        <h3 class="aboutsection2heading2">
+                            ASTM and SEMA Standards
+                        </h3>
+                        <div class="aboutsection2list">
+                            <p>Our concrete products are formulated and mixed by TEXAN Concrete Ready Mix and delivered to your site by truck. This allows much greater convenience and added consistency for your project. Additionally, our Houston concrete team can deliver the precise formulation and amount of concrete needed to complete your project. We mix your concrete to rigorous ASTM and SEMA standards and use advanced Alkon Spectrum 6 batch plant methods. Therefore, we can deliver the best solutions for your commercial, infrastructure and residential needs.
+                            </p>
+                            <ul>
+                                <li>
+                                    Concrete consists of aggregates suspended in a mixture of cement and water. Aggregates range in size and consistency from large pieces of gravel to tiny pieces of sand. When activated by water, the cement acts as a paste that holds together the aggregate pieces as it hardens.
+                                </li>
+                                <li>
+                                    The proportions of aggregate, cement and water must be precise. Precision creates the most durable and reliable concrete for your project.
+                                </li>
+                                <li>
+                                    Our team uses the most advanced equipment to ensure consistent proportions and the right solutions for residential, commercial and infrastructure projects.
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="aboutimg1">
+                        <img src="./images/ready mix.jpeg" alt="" id="aboutimg1">
+                    </div>
+                </div>
+            </div>
+            <p class="aboutp3">
+                Moreover, our team can provide the proven solutions needed to manage large-scale infrastructure implementations and home improvement projects quickly and conveniently. Additionally, you can enjoy the on-time service and the most appropriate formulations for your specific needs.
+            </p>
+
+            <h3 class="aboutsection2heading3">
+                Ready Mix Concrete Houston Contractor
+            </h3>
+            
+            <p class="aboutp3">
+                Our professionals can provide you with the proven solutions you need to ensure the best results for projects large and small. Above all, we are an experienced Houston concrete contractor that will work with you to determine the right formulation and the best approach to your specific application. Therefore, if you need residential, commercial or infrastructure concrete services, TEXAN Concrete Ready Mix can provide you with the solutions you need to ensure the best results. Contact us today at 713-255-3333 to discuss your needs with us. We look forward to working with you.
+            </p>
+
+        </div>
+
+        <div class="col-sm-3">
+            <div id="get a quote"></div>
+        </div>
+    </div>
+</section>
+<div id="footer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+</script>

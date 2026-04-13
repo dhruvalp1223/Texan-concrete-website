@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<div id="header"></div>
+<script src="/script.js"></script>
+
+
+<section class="aboutsection">
+    <div class="aboutsection1main">
+        <div class="aboutsection1part1">
+            <div class="aboutsectionpart1heading">
+                <h1 class="aboutsection1part1heading1">
+                    Residential
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="aboutsection2">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row" id="aboutsection22">
+                <div class="col-sm-8">
+                    <div class="aboutsection2part1">
+
+                        <h3 class="aboutsection2heading">
+                            Houston Ready Mix Concrete – Residential Concrete
+                        </h3>
+
+                        <p class="aboutp2">
+                            At TEXAN Concrete Ready Mix, will help you with any concrete related projects in the Houston
+                            metropolitan area. Concrete offers superior durability and versatility for a wide range of
+                            applications. Whether you are pouring the foundation for a brand-new home foundation or
+                            restoring the surface for your existing driveway, the trained and talented technicians at
+                            TEXAN Concrete Ready Mix can deliver the best possible results for all your residential
+                            concrete projects.
+                        </p>
+
+                        <h3 class="aboutsection2heading2">
+                            Houston Concrete Applications for Residential Needs
+                        </h3>
+
+                        <p class="aboutp2">
+                            Our team of Houston cement mixing and pouring experts can provide you with expert guidance
+                            and support for a wide range of residential applications that include the following:
+                        </p>
+
+                        <div class="aboutsection2list">
+                            <ul>
+                                <li>
+                                    Pouring Foundations and Slabs
+                                </li>
+                                <li>
+                                    Installing, repairing or replacing steps and porch stoops
+                                </li>
+                                <li>
+                                    Pouring driveways and sidewalks
+                                </li>
+                                <li>
+                                    Designing and installing non-slip pool surrounds for greater safety outdoors
+                                </li>
+                                <li>
+                                    Creating outdoor patios and grilling areas
+                                </li>
+                                <li>
+                                    Pouring wall foundations and slabs for homes and outbuildings
+                                </li>
+                                <li>
+                                    Installing or repairing garage floors
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="aboutimg1">
+                        <img src="./images/Gravatar.jpg" alt="" id="aboutimg1">
+                    </div>
+                </div>
+            </div>
+            <p class="aboutp3">
+                Our years of experience in the Houston concrete supply industry are your guarantee that you will receive
+                the most appropriate solutions for your home improvement project. From 1 yard to 1,000 yards, no job is
+                too big or too small.
+            </p>
+
+            <h3 class="aboutsection2heading3">
+                Vertical and Horizontal Housing
+            </h3>
+
+            <p class="aboutp3">
+                Depending on your preferences and the size of your property, you may choose to build a multi-story or
+                ranch-style home. At TEXAN Concrete Ready Mix, we have the in-depth knowledge needed to provide you with
+                the right foundation solutions for every style of home. From poured wall foundations that provide solid
+                support and added storage and living space to slabs and footers, we can deliver the best solutions for
+                your home building needs. We are a leading Houston concrete contractor and can work with your
+                homebuilder or construction company to ensure that your new home is built to stand the test of time.
+            </p>
+
+            <h3 class="aboutsection2heading3">
+                Houston Ready Mix Concrete Solutions
+            </h3>
+
+            <p class="aboutp3">
+                TEXAN Concrete Ready Mix uses the latest technologies to formulate and mix concrete for your residential
+                needs. Our technicians use only ASTM-approved aggregate materials and SEMA-approved add mixes, allowing
+                you to purchase with confidence from us. We then deliver your concrete directly to the work site and
+                pour it to your precise specifications. Our attention to detail and advanced formulation methods are
+                designed to ensure your complete satisfaction with the work we perform on your behalf.
+            </p>
+            <p class="aboutp3">
+                If you are planning a home remodeling project or need to repair your driveway, steps or garage floor,
+                our concrete technicians can provide you with the best options for your concrete installation. We will
+                work with you to create a plan that suits your budget and meets your expectations and needs perfectly.
+                To learn more about how we can deliver the concrete you need to complete your projects, give us a call
+                at 713-255-3333. We look forward to the opportunity to work with you to enhance the utility and curb
+                appeal of your Houston home.
+            </p>
+        </div>
+
+        <div class="col-sm-3">
+            <div id="get a quote"></div>
+        </div>
+
+</section>
+<div id="footer"></div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching header:", error);
+            });
+    });
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching footer:", error);
+            });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("get a quote.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("get a quote").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error fetching get a quote:", error);
+            });
+    });
+
+</script>
